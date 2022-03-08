@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OpenCVCamera">
+
+
+
+
+    <org.opencv.android.JavaCameraView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/camera_surface"
+        />
+
+
+
+    <TextView
+        android:id="@+id/textBluetooth"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Bluetooth Durum:"
+        android:layout_gravity="top|center"
+        android:textColor="@color/white"
+        />
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:backgroundTint="#189000"
+        android:src="@drawable/ic_mic_black_off"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"
+        android:id="@+id/button"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:hint="Bas Konuş"
+        android:id="@+id/text"
+        android:textColor="@color/white"
+        />
+</FrameLayout>
